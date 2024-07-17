@@ -52,8 +52,6 @@ def main():
         torrent = decode_bencode(bencoded_content)
         print("Tracker URL:", torrent["announce"].decode())
         print("Length:", torrent["info"]["length"])
-    else:
-        raise NotImplementedError(f"Unknown command {command}")
 
 
 if __name__ == "__main__":
